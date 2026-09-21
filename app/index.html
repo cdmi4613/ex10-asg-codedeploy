@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX10 CodeDeploy</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8fafc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .card {
+            background: white;
+            padding: 50px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .success {
+            color: #15803d;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .info {
+            margin-top: 20px;
+            color: #475569;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+
+        <h1>EX10 ASG CodeDeploy</h1>
+
+        <div class="success">
+            Deployment Success
+        </div>
+
+        <div class="info">
+            GitHub Actions<br>
+            ↓<br>
+            ECR<br>
+            ↓<br>
+            AWS CodeDeploy<br>
+            ↓<br>
+            Auto Scaling Group<br>
+            ↓<br>
+            Private EC2
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+# Terraform
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+
+# Credentials
+*.pem
+*.key
+.env
+.aws/
+
+# OS / Editor
+.DS_Store
+.vscode/
