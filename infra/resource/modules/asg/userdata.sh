@@ -7,8 +7,7 @@ dnf update -y
 dnf install -y \
   ruby \
   wget \
-  docker \
-  curl
+  docker
 
 systemctl enable docker
 systemctl start docker

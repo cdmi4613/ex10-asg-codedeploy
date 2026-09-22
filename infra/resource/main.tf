@@ -40,6 +40,7 @@ module "ecr" {
 
 # ==========================================
 # 4. ASG
+# Network 전체(NAT/Route 포함) 완료 후 생성
 # ==========================================
 
 module "asg" {
@@ -59,6 +60,10 @@ module "asg" {
   min_size         = 1
   max_size         = 3
   desired_capacity = 2
+
+  depends_on = [
+    module.network
+  ]
 }
 
 
